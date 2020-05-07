@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GITHUB</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">DEVOPS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">About Github</h1>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="images/ghub.jpeg" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead"><b>What is GIT?</b></p>
+
+        <p>GIT is a free open source version control system created by LINUS TORVALDS, it is to keep track of changes to files and projects over time. Real life projects generally have multiple developers working in parallel. So they need a version control system like Git to make sure that there are no code conflicts between them.</p>
+<!--- GitHub working --->
+      
+        <p>What is GitHub and How does it work?
+    <div class="row">
+      <div class="col-sm-6 col-md-9"></div>
+      <div class="col-sm-12 col-md-24">
+        <p>GitHub is a website the host GIT Repositories online, making it easier for developers to share their codes. Some of the terms used in Git can seem a bit foreign at first and if you’re working in the command line it might be tricky to visualize the process. This simple step by step guide to a Git workflow aims to help give an introductory overview for structuring a group project.</p>
+      </div>
+      <div class="col-sm-6 col-md-9"></div>
+    </div>
+      
+      <div class="row">
+        <div clss="col-sm-3 col-md-6"></div>
+      <div class="col-sm-24 col-md-9">
+        <img class="rounded" src="images/gitfw.png" alt="" width="749" height="309">
+      </div>
+      <div clss="col-sm-3 col-md-6"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-9"></div>
+      <div class="col-sm-12 col-md-24">
+        <p>Step 1: Set up a Github Organization<br>
+It is the central working repository on Github that everyone will draw from.</p>
+<p>Step 2: Fork Organization Repository to Your Personal GitHub<br>
+Next fork the central organization repository to your personal GitHub account. This will be your own copy of the project files.</p>
+<p>Step 3: Clone the Repository to Your Local Machine<br>
+Create a local copy of these files on your personal machine so you can modify/add to them. You do this by navigating to the directory where you wish to store the project and typing the following into the command line:<br>
+<b>"git clone (url to the project repo on your personal Github profile).git"</b><br>
+This ‘clones’ your GitHub repo to your personal computer. To navigate into the cloned directory your just created:<br>
+<b>"git branch"</b></p>
+<p>Step 4: Create a Branch for your Working Files<br>
+But what if you want to update the project? Where should you make your changes if the master branch can only have clean, functional code? Let’s make a new branch to create new features, test things out and essentially be the working file. You create a new branch (and move into it) by typing:<br>
+<b>"git checkout -b (branch name)"</b></p>
+<p>Step 5: Set Remote Repository to the GitHub Organization<br>
+As you continue to work on your project, you will periodically want to incorporate changes from your other team members. Since your GitHub organization is where your functional code is stored, you will want to pull from there. In order to set up this link between your local directory on your own machine and the GitHub organization repository, you will need to set up a ‘remote’ repository (aka a repo that is remote and not located on your local machine). Do this by typing:<br>
+<b>"git remote add upstream (url to the organization on GitHub).git"</b></p>
+<p>Step 6: Get Coding!<br>
+Add new features, tests, and tweaks. Once you get to a place where you feel good about the work you’ve done, let’s incorporate it into the project’s code base. Before we start this process, be sure to add and commit the files you’ve been working on.</p>
+<p>Step 7: Pull the Most Recent Files From the Organization Repo<br>
+The GitHub organization repo is where the latest, functioning code base is stored, so we should pull from there. We already set up a link to this repo in step 5, so now is our chance to utilize it!
+First, move to the master branch by typing:<br>
+<b>"git checkout master"</b><br>
+Our master branch is what holds clean, functional code on our local machine, so this is where we pull the most recent changes to. We’re essentially bringing our master branch up to date with what is in the organization repo. We pull the changes from from the organization into our master branch by typing:<br>
+<b>"git pull upstream master"</b></p>
+<p>Step 8: Merge the Master Branch Into the Feature Branch<br>
+Now that our master branch is up to date, we want to incorporate all those changes into our feature branch. Let’s go back to our feature branch by typing:<br>
+<b>"git checkout feature"</b><br>
+Now we want to merge all of the code in the master branch into our feature branch. Once we do this, our feature branch contains essentially the entire working code base plus our added features. We make this merge by typing:<br>
+<b>"git merge master"</b><br>
+This means merge the master branch into the branch we are currently in (the feature branch).</p>
+<p>Step 9: Push Your Code to your GitHub Repo<br>
+After you’ve merged the master branch into your feature branch (and potentially sorted out any merge conflicts), you’re ready to push your changes up to your GitHub repo. While you’re still in the feature branch, type:<br>
+<b>"git push origin feature"</b><br>
+This means your are pushing your code to the origin repository’s feature branch.</p>
+<p>Step 10: Make a Pull Request to the Organization Repo<br>
+This is the final step! Now that your changes are in your GitHub repo’s feature branch, make a pull request from that branch to the organization’s repo.<br>
+This ‘pull’ is different from the one we made in step 7 to get the most recent code from the organization repo. A ‘pull request’ on GitHub is simply you asking a repository to pull in your changes. Once you make a pull request, your teammates can review the changes you’ve made before they are officially ‘merged’ into the organization repository. Once they are merged in, your other team members will have access to the code you’ve added by pulling it down to their local machines like you did in step 7.<br>
+Congrats! You have now completed the steps to a Git workflow! You will repeat steps 6–10 over and over again throughout your project. Hopefully following this guide will help make collaboration easier and less error prone.</p>
+      </div>
+      <div class="col-sm-6 col-md-9"></div>
+    </div>
+        </p>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; XYZ 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

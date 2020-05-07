@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>JENKINS</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">DEVOPS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">Introduction to Jenkins</h1>
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead"><b>What is Jenkins?</b></p>
+
+        <p>Jenkins is an opensource automation tool which is used for continuous integration. Some of below features of Jenkins<br>
+1. Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.<br>
+2. Easy installation<br>
+3. Easy configuration<br>
+4. It provides 400+ Pulgin<br>
+5. Jenkins provides extensible features by adding plugins and distributed by build different projects and testing etc.</p>
+<!--- Jenkin Installation --->
+      
+        <p>Prerequisites
+    <div class="row">
+      <div class="col-sm-6 col-md-9"></div>
+      <div class="col-sm-12 col-md-24">
+        <p>1. RHEL 8<br>
+2. Minimum 1 GB RAM<br>
+3. JDK Higher verison is supported<br>
+4. Open Port 8080.</p>
+      </div>
+      <div class="col-sm-6 col-md-9"></div>
+    </div>
+      
+      <div class="row">
+        <div clss="col-sm-3 col-md-6"></div>
+      <div class="col-sm-24 col-md-9">
+        <p>To install Jenkins follow these steps:<br>
+        <p>1. <b> # sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo</b></p>
+        <p>2. <b> # sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key</b></p>
+        <p>3. <b> # yum install jenkins</b></p>
+        <p>4. After installing Jenkins, to check whether it is working or not; Run Command <b># -systemctl status jenkins</b>, if it is not in active state then Run Command -<b># systemctl start jenkins.</b></p>
+        <p>5. To know Ip address of your system Run Command - <b># ifconfig</b> Once Jenkin is downloaded.</p>
+        <p>6. Now copy your IP address followed by port 8080, say <b>"192.168.1xx.xxx:8080"</b> and paste it in your browser, you can see jenkins portal which opens and ask for password. Password file location is given. Goto to location and copy the password and paste it in the password input box.</p>
+        <p>7. After this step you will be redirected to Jenkins Dashboard portal where you can start doing your tasks like creating jobs, downloading plugins, etc.</p>
+        <p>8. To install plugin goto; <b>Manage Jenkins --> Manage Plugins --> Available --> Search for Github</b> and select and then click on Download and install.</p>
+        <p>9. Now you are successfully completed the setup of Jenkins and installed Github plugin.</p>
+      </p>
+      </div>
+      <div clss="col-sm-3 col-md-6"></div>
+    </div>
+        </p>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; XYZ 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
